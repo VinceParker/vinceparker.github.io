@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+/*
+Skeleton V2.0.4
+Copyright 2014, Dave Gamache
+www.getskeleton.com
+Free to use under the MIT license.
+http://www.opensource.org/licenses/mit-license.php
+12/29/2014
+*/
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Parker BroZ Bakery</title>
+
+    <!-- Bootstrap -->
+    <link href="css/skeleton.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ 
+<header>
+   <h1> PB's Bakery </h1>
+</header>
+<body>
+  <div class="row" style="max-width:1024px">
+    <div class "one-column">
+      <img src="img/bake1.jpg" style="width:175%", "height:10%"></a>
+    </div>
+  </div>
+
+  <hr>
+  <p id="demo"></p>
+  <h2> Grand Opening</h2>
+  <script>
+      var countDownDate = new Date("Nov 18, 2018 02:02:02").getTime();
+      var x = setInterval(function() {
+      var now = new Date().getTime();
+          var distance = countDownDate - now;
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var secs = Math.floor((distance % (1000 * 60)) / 1000);
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + mins + "m " + secs + "s ";
+          if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+      }, 1000);
+      </script>
+  <hr>
+
+
+  <div class="row">
+        <div class="one-half column">
+            <img src="img/vinceparker.jpg"></a>
+        </div>
+  </div>
+  <div class="row">
+        <div class="one-half column">
+          <button onclick="typeWriter()">Click Founder's Philsophy</button>
+
+<p id="memo"></p>
+
+<script>
+var i = 0;
+var txt = 'Baking to your hearts since 1995. We pride ourselves in making delicious bake goods for you, the community and America.';
+var speed = 23;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("memo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+</div>
+  </div>
+
+   <hr>
+
+   <div id="Progress">
+      <div id="Bar">10%</div>
+    </div>
+
+    <button onclick="move()">Click to see the percentage of the next bake good.</button> 
+
+<script>
+
+function move() {
+  var elem = document.getElementById("Bar");   
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 88) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+
+<h3>Headquarters Time in El Salvador</h3>
+
+<script src= "js/clock.js"></script>
+
+<body onload="setInterval(starttime, 500); dayAndDate()">
+    <p id="day">&nbsp;</p>
+    <p id="date">&nbsp;</p>
+    <p id="time">&nbsp;</p>
+
+    <script src="js/bakery.js"></script>
+  </body>
+</html>

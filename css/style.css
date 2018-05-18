@@ -1,0 +1,113 @@
+body, html {
+    background-color: #d9b3ff;
+}
+h1 {
+    background-color: #0B132B;
+    margin-top:30px;
+    margin-left: auto;
+    margin-right:auto;
+    box-shadow: 10px 10px 10px #8d8d8d;
+    text-align: center;
+    font-weight: bold;
+    color: #6FFFE9;
+}
+h2 {
+    background-color: #6FFFE9;
+    margin-top:30px;
+    margin-left: auto;
+    margin-right:auto;
+    box-shadow: 10px 10px 10px #8d8d8d;
+    text-align: center;
+    font-weight: bold;
+    color: #0B132B;
+}
+h3 {
+    background-color: #1C2541;
+    margin-top:30px;
+    margin-left: auto;
+    margin-right:auto;
+    box-shadow: 10px 10px 10px #8d8d8d;
+    text-align: center;
+    font-weight: bold;
+    color: #5BC0BE;
+}
+
+h4 {
+    margin-left: auto;
+    margin-right:auto;
+    font-size: medium;
+    text-align: center;
+}
+p {
+    margin-left: auto;
+    margin-right:auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+/* IDs */
+#Vince {
+    background-color: #d9b3ff;
+    margin-top:30px;
+    margin-left: auto;
+    margin-right:auto;
+    box-shadow: 5px 5px 5px #8d8d8d;
+}
+#Bar {
+    width: 8%;
+    height: 30px;
+    background-color: rgb(248, 8, 80);
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+#Progress {
+    width: 100%;
+    background-color: #00F7FF;
+}
+
+/* Classes */
+
+.right {
+float: right;
+}
+
+.left {
+float: left;
+}
+.top {
+float: top;
+}
+.bottom {
+float: bottom;
+}
+
+.tab {
+border: 1px solid;
+background-color: #00F7FF
+}
+
+.tab button {
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+font-size: 16px;
+}
+
+.tabcontent {
+display: none;
+padding: 6px 12px;
+border: 1px solid #ffffff;
+border-top: none;
+}
+
+.myslides {
+display:none;
+}
+
